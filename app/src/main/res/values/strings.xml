@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Aston_intensive_1</string>
+    <string name="service_manifest_description">Playing music</string>
+    <string name="button_play">Play</string>
+    <string name="button_pause">Pause</string>
+    <string name="content_description_previous_track">previous track</string>
+    <string name="content_description_play_or_pause_track">Play or pause track</string>
+    <string name="content_description_next_track">next track</string>
+</resources>
