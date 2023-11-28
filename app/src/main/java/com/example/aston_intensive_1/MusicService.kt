@@ -7,7 +7,6 @@ import android.media.MediaPlayer
 import android.net.Uri
 import android.os.Binder
 import android.os.IBinder
-import android.widget.Toast
 import androidx.core.app.NotificationCompat
 import java.util.concurrent.Executors
 
@@ -37,13 +36,11 @@ class MusicService : Service() {
 
     override fun onCreate() {
         super.onCreate()
-        Toast.makeText(this, "service created", Toast.LENGTH_SHORT).show()
         mediaPlayer = MediaPlayer()
         mediaPlayer.setOnCompletionListener { nextTrack() }
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        Toast.makeText(this, "service starting", Toast.LENGTH_SHORT).show()
         startForeground(NOTIFICATION_ID, getNotification())
         Executors.newSingleThreadExecutor().execute {
             try {
@@ -115,6 +112,5 @@ class MusicService : Service() {
     override fun onDestroy() {
         super.onDestroy()
         mediaPlayer.release()
-        Toast.makeText(this, "service done", Toast.LENGTH_SHORT).show()
     }
 }
