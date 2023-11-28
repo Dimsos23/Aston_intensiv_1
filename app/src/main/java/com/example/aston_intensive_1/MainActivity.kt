@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var serviceIntent: Intent
     private val testCommitPush = true
     private val testCommitPush2 = true
+    private val testCommitPush3 = true
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
