@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     private var mBound: Boolean = false
     private lateinit var serviceIntent: Intent
     private val testCommitPush = true
+    private val testCommitPush2 = true
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
